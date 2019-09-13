@@ -35,13 +35,6 @@ const App = () => {
           <h1 className="Header">React Wars</h1>
         </div>
         <div>
-          <h2>Name: {starWarsData[0].name}</h2>
-          <p>Height: {starWarsData[0].height}</p>
-          <p>Mass: {starWarsData[0].mass}</p>
-          <p>Hair colour: {starWarsData[0].hair_color}</p>
-          <p>Skin colour: {starWarsData[0].skin_color}</p>
-        </div>
-        <div>
           <People people={starWarsData} />
         </div>
       </div>

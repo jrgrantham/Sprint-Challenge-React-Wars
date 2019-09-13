@@ -5,8 +5,10 @@ const StyledPerson = styled.div`
     border: 1px solid black;
     border-radius: 10px;
     padding: 10px;
-    margin: 5px;
-    width: 200px;
+    margin: 20px 5px;
+    width: 300px;
+    color: white;
+    background-color: rgba(50, 50, 50, 0.4);
 `;
 
 function Person(props) {
