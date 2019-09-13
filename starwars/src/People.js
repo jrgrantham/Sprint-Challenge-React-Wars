@@ -9,8 +9,11 @@ function People(props) {
                 people.map(
                     (person) => (
                         <Person
-                            key={person}
-                            name={person}
+                            key={person.name}
+                            name={person.name}
+                            mass={person.mass}
+                            hair_color={person.hair_color}
+                            skin_color={person.skin_color}
                         />
                     )
                 )

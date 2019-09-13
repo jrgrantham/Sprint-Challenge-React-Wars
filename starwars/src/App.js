@@ -1,5 +1,6 @@
 import React, {useState, useEffect } from 'react';
 import axios from 'axios';
+import People from './People';
 import './App.css';
 
 
@@ -39,6 +40,9 @@ const App = () => {
           <p>Mass: {starWarsData[0].mass}</p>
           <p>Hair colour: {starWarsData[0].hair_color}</p>
           <p>Skin colour: {starWarsData[0].skin_color}</p>
+        </div>
+        <div>
+          <People people={starWarsData} />
         </div>
       </div>
     )
