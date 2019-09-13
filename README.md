@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React uses a virtual DOM to save reloading the whole page when changes are made. This is done by breaking the page into components and give them state.
+
 - [ ] What does it mean to _think_ in react?
+
+To break the page up into a component hierarchy that reflects where the data is coming from and how it is structured.
 
 - [ ] Describe state.
 
+State is piece of data, if the data changes, the state changes.
+
 - [ ] Describe props.
 
+Props are object arguments of the componets and are passed down to children from their parent.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+Side effects are observable. Something that "changes the world" and not just changing a value intrernally.
 
 ## Project Set Up
 
