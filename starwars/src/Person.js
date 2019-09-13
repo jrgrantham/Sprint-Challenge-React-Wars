@@ -4,18 +4,22 @@ import styled from 'styled-components';
 const StyledPerson = styled.div`
     border: 1px solid black;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     margin: 20px 5px;
-    width: 300px;
+    width: 250px;
     color: white;
     background-color: rgba(50, 50, 50, 0.4);
+`;
+
+const StyledName = styled.h2`
+    text-align: center;
 `;
 
 function Person(props) {
     const { name, height, mass, hair_color, skin_color } = props;
     return (
         <StyledPerson>
-            <h2>{name}</h2>
+            <StyledName>{name}</StyledName>
             <p>Height: {height}</p>
             <p>Mass: {mass}</p>
             <p>Hair colour: {hair_color}</p>

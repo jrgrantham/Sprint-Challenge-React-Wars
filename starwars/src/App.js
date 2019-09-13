@@ -1,10 +1,14 @@
 import React, {useState, useEffect } from 'react';
 import axios from 'axios';
 import People from './People';
+import AwaitingData from './AwaitingData';
+import DynamicTitle from './DynamicTitle';
 import './App.css';
 
-
-const sourceData = 'https://swapi.co/api/people/';
+const url = 'https://swapi.co/api/';
+const subject = 'people';
+const sourceData = `${url}${subject}/`;
+// console.log(sourceData);
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -35,15 +39,19 @@ const App = () => {
           <h1 className="Header">React Wars</h1>
         </div>
         <div>
+          <DynamicTitle subject={subject}/>
+        </div>
+        <div>
           <People people={starWarsData} />
         </div>
       </div>
     )
   } else {
     return (
-      <div>
-        <h1>Waiting for data...</h1>
-      </div>
+      <AwaitingData />
+      // <div>
+      //   <h1>Waiting for data...</h1>
+      // </div>
     )
   }
 
