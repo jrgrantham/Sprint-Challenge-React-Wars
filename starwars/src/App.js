@@ -16,7 +16,7 @@ const App = () => {
       .then(response => {
         // console.log(response);
         // console.log(response.data);
-        console.log(response.data.results);
+        // console.log(response.data.results);
         setStarWarsData(response.data.results);
       })
       .catch(error => {
@@ -30,7 +30,16 @@ const App = () => {
   if (starWarsData) {
     return (
       <div>
-        I have data
+        <div className="App">
+          <h1 className="Header">React Wars</h1>
+        </div>
+        <div>
+          <h2>Name: {starWarsData[0].name}</h2>
+          <p>Height: {starWarsData[0].height}</p>
+          <p>Mass: {starWarsData[0].mass}</p>
+          <p>Hair colour: {starWarsData[0].hair_color}</p>
+          <p>Skin colour: {starWarsData[0].skin_color}</p>
+        </div>
       </div>
     )
   } else {
@@ -45,11 +54,6 @@ const App = () => {
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
 
-  return (
-    <div className="App">
-      <h1 className="Header">React Wars</h1>
-    </div>
-  );
 }
 
 export default App;
