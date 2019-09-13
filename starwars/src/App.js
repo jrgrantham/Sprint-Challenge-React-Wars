@@ -49,7 +49,7 @@ const App = () => {
   } else {
     return (
       <div>
-        No data
+        <h1>Waiting for data...</h1>
       </div>
     )
   }
