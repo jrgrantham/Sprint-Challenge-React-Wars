@@ -30,7 +30,7 @@ const App = () => {
     }
   , [])
 
-  console.log(starWarsData);
+  // console.log(starWarsData);
 
   if (starWarsData) {
     return (
