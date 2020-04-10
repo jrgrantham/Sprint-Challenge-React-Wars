@@ -5,9 +5,9 @@ import AwaitingData from './AwaitingData';
 import DynamicTitle from './DynamicTitle';
 import './App.css';
 
-const url = 'https://swapi.co/api/';
+const url = 'https://lambda-github-api-server.herokuapp.com/';
 const subject = 'people';
-const sourceData = `${url}${subject}/`;
+const sourceData = `https://lambda-github-api-server.herokuapp.com/`;
 // console.log(sourceData);
 
 const App = () => {
@@ -21,7 +21,7 @@ const App = () => {
       .then(response => {
         // console.log(response);
         // console.log(response.data);
-        // console.log(response.data.results);
+        console.log(response.data.results);
         setStarWarsData(response.data.results);
       })
       .catch(error => {
